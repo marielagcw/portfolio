@@ -8,12 +8,18 @@
 // 3. Armar el dado o los dados para jugar:
 //  a. Los dados tienen que ser aleatorios pero caer en las celdas que tienen contenido:
 //  b. Las secciones son:
-//  ♥ Sobre mí → objetivo personal #aboutme (OCA)
-//  ♥ Docente → Experiencia laboral como docente #teacher (DADOS)
-//  ♥ Contadora → Experiencia laboral como contadora #accountant (LABERINTO)
-//  ♥ Estudios → Certificados universitarios y técnicos #studies (POSADA)
-//  ♥ Cursos → Certificados de cursos y capacitaciones #curses (OCA)
-//  ♥ Habilidades → conocimientos y softskills #skills (PUENTE)
-//  ♥ Proyectos → mis páginas y proyectos personales #projects (PUENTE)
+//  ♥ Sobre mí → objetivo personal #sobremi (OCA)
+//  ♥ Docente → Experiencia laboral como docente #docente (DADOS)
+//  ♥ Contadora → Experiencia laboral como contadora #contadora (LABERINTO)
+//  ♥ Estudios → Certificados universitarios y técnicos #estudios (POSADA)
+//  ♥ Cursos → Certificados de cursos y capacitaciones #cursos (OCA)
+//  ♥ Habilidades → conocimientos y softskills #habilidades (PUENTE)
+//  ♥ Proyectos → mis páginas y proyectos personales #proyectos (PUENTE)
 
+/* -------------------------------------------------------------------------- */
+/*                                 Formularios                                */
+/* -------------------------------------------------------------------------- */
+
+// La sección formularios tiene como objetivos:
+// ♥ Demostrar una validación de datos
 
