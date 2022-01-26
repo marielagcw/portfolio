@@ -340,18 +340,38 @@ footer .redes-sociales a:hover {
 /* ------------------------------ Media Queries ----------------------------- */
 
 @media screen and (max-width: 800px) {
-  header .menu {
+  header .contenedor-texto{
+    margin: 0;
+    margin-bottom: 150px;
+  }
+  header nav.menu {
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
   .trabajos .contenedor-trabajos .trabajo {
-    width: 46%;
+    width: 50%;
   }
-  .email,
+  .trabajos .contenedor-trabajos .trabajo img.img-trabajo{
+    padding: 0px;
+    margin:0px;
+  }
+  div.contenedor{
+    text-align: center;
+    padding: 0;
+  }
+  a.email,
   .wp {
-    padding: 10px;
+    width:100%;
+    margin:0px;
+    padding: 5px;
+    inline-size: 200px;
+    overflow-wrap: break-word;
   }
   header .menu a:hover {
     border: none;
@@ -382,10 +402,26 @@ footer .redes-sociales a:hover {
   .youtube:hover {
     background-color: var(--bgColorLight);
   }
+  .contenedor-texto div.texto{
+  border:none;
+  padding:0px;
+  inline-size: 180px;
+  overflow-wrap: break-word;
+  }
+  div.profesiones{
+    width:100%;
+    padding: 0px;
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 @media screen and (max-width: 500px) {
   header .contenedor-texto .texto .nombre {
-    font-size: 25px;
+    font-size: 20px;
   }
   header .contenedor-texto .texto .profesiones {
     font-size: 5px;
