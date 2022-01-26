@@ -162,12 +162,12 @@ section.trabajos .contenedor-trabajos {
   width: 100%;
   margin: 20px;
   vertical-align: top;
-  border-radius: 3px;
+  border-radius: 5px;
   transition-duration: 1s;
 }
 .img-trabajo:hover{
   transform:scale(1.10);
-  box-shadow: 0px 0px 10px 2.5px rgba(107, 60, 194, 0.5);
+  box-shadow: 0px 0px 10px 2.5px rgba(107, 60, 194, 0.10);
 }
 .trabajos .contenedor-trabajos .trabajo .descripcion {
   text-align: center;
@@ -279,7 +279,7 @@ footer .redes-sociales a {
   padding: 15px 0;
   border-radius: 3px;
   font-size: 30px;
-  margin: 0 20px;
+  margin: 20px;
   transition-duration: 0.75s;
 }
 footer .redes-sociales a:hover{
@@ -301,4 +301,55 @@ footer .redes-sociales a:hover{
 /* -------------------------------------------------------------------------- */
 /*                                 Responsive                                 */
 /* -------------------------------------------------------------------------- */
-/* ------------------------------ In progress! ------------------------------ */
+/* ------------------------------ Media Queries ----------------------------- */
+
+@media screen and (max-width:800px){
+  header .menu {
+    text-align: center;
+  }
+  .trabajos .contenedor-trabajos .trabajo {
+    width: 46%;
+  }
+  .email, .wp{
+    padding:10px;
+  }
+  header .menu a:hover {
+    border: none;
+    transform: scale(1.00);
+  }
+  .img-trabajo:hover{
+    transform:scale(1.00);
+    box-shadow: 0px 0px 0px 0px rgba(107, 60, 194, 0.10);
+}  
+.email:hover, .wp:hover{
+  color: var(--fontColorMedium);
+  transform: scale(1.00);
+}
+  footer .redes-sociales a:hover{
+    color: var(--fontColorDark);
+    transform: scale(1.00)
+  }
+  .github:hover{
+    background-color: var(--bgColorLight);
+  }
+  .linkedin:hover{
+    background-color: var(--bgColorLight);
+  }
+  .instagram:hover{
+    background-color: var(--bgColorLight);
+  }
+  .youtube:hover{
+    background-color: var(--bgColorLight);
+  }
+}
+@media screen and (max-width: 500px){
+  header .contenedor-texto .texto .nombre{
+    font-size: 25px;
+  }
+  header .contenedor-texto .texto .profesiones{
+    font-size: 5px;
+  }
+  footer div.contenedor-redes{
+    flex-wrap: wrap;
+  }
+}
