@@ -53,3 +53,7 @@ function cambiarTema(array) {
 boton.addEventListener("click", (e) => {
   cambiarTema(arrayElementosHTML);
 });
+AOS.init({
+  duration: 1200,
+})
+
