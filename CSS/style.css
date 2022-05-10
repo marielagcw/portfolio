@@ -59,7 +59,6 @@ header .menu {
 }
 header .menu a {
   color: var(--fontColorLight);
-  text-decoration: none;
   padding-bottom: 10px;
   border-bottom: 2px solid transparent;
   margin: 0 30px;
@@ -168,7 +167,7 @@ section.trabajos {
   background-color: var(--bgColorMediumLight);
   width: 100%;
 }
-div.cambiarTema{
+div.cambiarTema {
   padding: 30px 0;
 }
 .trabajos .contenedor {
@@ -206,14 +205,24 @@ section.trabajos .contenedor-trabajos {
 .trabajos .contenedor-trabajos .trabajo .descripcion {
   text-align: center;
 }
-.trabajos .contenedor-trabajos .trabajo .nombre {
+.trabajos .contenedor-trabajos .trabajo p.nombre {
   font-weight: 700;
   color: var(--fontColorDark);
   margin-bottom: 10px;
 }
-.trabajos .contenedor-trabajos .trabajo .categoria {
+.trabajos .contenedor-trabajos .trabajo p.categoria {
   font-size: 14px;
-  color: var(--fontColorMediumDark);
+  color: var(--fontColorDark);
+}
+a.enlace{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+p span{
+  font-weight: 700;
 }
 /* -------------------------------------------------------------------------- */
 /*                                   Footer                                   */
@@ -281,7 +290,7 @@ footer .contacto .formulario textarea:focus {
   border: 3px solid var(--lineColorDark);
 }
 /* ---------------------------------- Email --------------------------------- */
-a.email,
+a.enlace,
 a.wp {
   font-weight: 400;
   color: var(--fontColorMedium);
@@ -292,7 +301,7 @@ a.wp {
   align-items: center;
   transition-duration: 1s;
 }
-.email:hover,
+.enlace:hover,
 .wp:hover {
   color: var(--fontColorDark);
   transform: scale(1.05);
@@ -340,7 +349,7 @@ footer .redes-sociales a:hover {
 /* ------------------------------ Media Queries ----------------------------- */
 
 @media screen and (max-width: 800px) {
-  header .contenedor-texto{
+  header .contenedor-texto {
     margin: 0;
     margin-bottom: 150px;
   }
@@ -357,21 +366,26 @@ footer .redes-sociales a:hover {
   .trabajos .contenedor-trabajos .trabajo {
     width: 50%;
   }
-  .trabajos .contenedor-trabajos .trabajo img.img-trabajo{
+  .trabajos .contenedor-trabajos .trabajo img.img-trabajo {
     padding: 0px;
-    margin:0px;
+    margin: 0px;
   }
-  div.contenedor{
+  div.contenedor {
     text-align: center;
     padding: 0;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
   }
-  a.email,
+  a.enlace,
   .wp {
-    width:100%;
-    margin:0px;
+    width: 100%;
+    margin: 0px;
     padding: 5px;
     inline-size: 200px;
     overflow-wrap: break-word;
+
   }
   header .menu a:hover {
     border: none;
@@ -381,7 +395,7 @@ footer .redes-sociales a:hover {
     box-shadow: 0px 0px 0px 0px rgba(107, 60, 194, 0.1);
     transform: scale(1);
   }
-  .email:hover,
+  .enlace:hover,
   .wp:hover {
     color: var(--fontColorMedium);
     transform: scale(1);
@@ -402,22 +416,21 @@ footer .redes-sociales a:hover {
   .youtube:hover {
     background-color: var(--bgColorLight);
   }
-  .contenedor-texto div.texto{
-  border:none;
-  padding:0px;
-  inline-size: 180px;
-  overflow-wrap: break-word;
-  }
-  div.profesiones{
-    width:100%;
+  .contenedor-texto div.texto {
+    border: none;
     padding: 0px;
-    margin:0px;
+    inline-size: 180px;
+    overflow-wrap: break-word;
+  }
+  div.profesiones {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
 }
 @media screen and (max-width: 500px) {
   header .contenedor-texto .texto .nombre {
