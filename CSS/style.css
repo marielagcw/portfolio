@@ -66,6 +66,7 @@ header .menu a {
   display: inline-block;
 }
 .menu a {
+  text-decoration: none;
   transition-duration: 0.75s;
 }
 header .menu a:hover {
