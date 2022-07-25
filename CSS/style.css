@@ -49,7 +49,7 @@ body {
 header {
   background: url(../img/fondo1.png) var(--bgColorDark);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:center;
   max-height: 600px;
 }
 /* --------------------------- Menú de navegación --------------------------- */
