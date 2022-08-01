@@ -17,7 +17,7 @@
   --fontFamily2: "Style Script", cursive;
   --fontColorLight: white;
   --fontColorMedium: #afafaf;
-  --fontColorDark: #A686E0;
+  --fontColorDark: #6c3cc2;
   --bgColorLight: white;
   --bgColorMediumLight: #e9e9e9;
   --bgColorDark: rgba(107, 60, 194, 0.637);
@@ -26,6 +26,7 @@
   --lineColorDark: #6c3cc2;
   --temaOscuroFont: white;
   --temaOscuroBg: #1a0859;
+  --fontColorDark2: #996ee9;
 }
 * {
   box-sizing: border-box;
@@ -156,14 +157,14 @@ section.acerca-de .texto {
 section.acerca-de .titulo {
   font-size: 34px;
   font-weight: 600;
-  color: var(--fontColorDark);
+  color: var(--fontColorDark2);
   text-align: center;
   line-height: 34px;
   margin-bottom: 40px;
 }
 section.acerca-de .texto .bold {
   font-weight: 600;
-  color: var(--fontColorDark);
+  color: var(--fontColorDark2);
 }
 /* -------------------------------- Trabajos -------------------------------- */
 section.trabajos {
@@ -179,7 +180,7 @@ div.cambiarTema {
 .trabajos .titulo {
   font-size: 34px;
   font-weight: 600;
-  color: var(--fontColorMediumDark);
+  color: var(--fontColorDark2);
   text-align: center;
   line-height: 34px;
   margin-bottom: 40px;
@@ -210,12 +211,12 @@ section.trabajos .contenedor-trabajos {
 }
 .trabajos .contenedor-trabajos .trabajo p.nombre {
   font-weight: 700;
-  color: var(--fontColorDark);
+  color: var(--fontColorDark2);
   margin-bottom: 10px;
 }
 .trabajos .contenedor-trabajos .trabajo p.categoria {
   font-size: 14px;
-  color: var(--fontColorDark);
+  color: var(--fontColorDark2);
 }
 a.enlace {
   display: flex;
@@ -237,7 +238,7 @@ footer .contacto {
 footer .contacto .titulo {
   font-size: 34px;
   font-weight: 600;
-  color: var(--fontColorDark);
+  color: var(--fontColorDark2);
   text-align: center;
   line-height: 34px;
   margin-bottom: 40px;
@@ -381,7 +382,7 @@ footer .redes-sociales a:hover {
   }
   .trabajos .contenedor-trabajos .trabajo {
     width: 50%;
-    display: flex;
+     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
