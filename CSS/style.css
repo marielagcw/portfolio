@@ -14,7 +14,7 @@
 /* -------------------------------- Variables ------------------------------- */
 :root {
   --fontFamily1: "Raleway", sans-serif;
-  --fontFamily2: "Dongle", sans-serif;
+  --fontFamily2: "Style Script", cursive;
   --fontColorLight: white;
   --fontColorMedium: #afafaf;
   --fontColorDark: #6c3cc2;
@@ -47,9 +47,10 @@ body {
 /*                                   Header                                   */
 /* -------------------------------------------------------------------------- */
 header {
-  background: url(../img/fondo1.png) var(--bgColorDark);
+  background: url(../img/background.png) var(--bgColorDark);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
   max-height: 600px;
 }
 /* --------------------------- Menú de navegación --------------------------- */
@@ -118,8 +119,9 @@ span.profesion {
   color: var(--fontColorLight);
   margin: 5px;
 }
-header .contenedor-texto .texto .nombre {
-  font-size: 35px;
+header .contenedor-texto .texto .nombre#nombre {
+  font-family: var(--fontFamily2);
+  font-size: 50px;
   line-height: 35px;
   margin-bottom: 10px;
 }
@@ -190,7 +192,7 @@ section.trabajos .contenedor-trabajos {
 }
 .trabajos .contenedor-trabajos .trabajo {
   margin: 40px;
-  width: 23%;
+  width: 15%;
 }
 .trabajos .contenedor-trabajos .trabajo .img-trabajo {
   border-radius: 5px;
@@ -215,14 +217,14 @@ section.trabajos .contenedor-trabajos {
   font-size: 14px;
   color: var(--fontColorDark);
 }
-a.enlace{
+a.enlace {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
-p span{
+p span {
   font-weight: 700;
 }
 /* -------------------------------------------------------------------------- */
@@ -374,8 +376,8 @@ footer .redes-sociales a:hover {
   div.contenedor {
     text-align: center;
     padding: 0;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -386,7 +388,6 @@ footer .redes-sociales a:hover {
     padding: 5px;
     inline-size: 200px;
     overflow-wrap: break-word;
-
   }
   header .menu a:hover {
     border: none;
