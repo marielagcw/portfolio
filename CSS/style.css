@@ -373,8 +373,18 @@ footer .redes-sociales a:hover {
     font-weight: 400;
     font-size:0.75rem;
   }
+  div.cambiarTema{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .trabajos .contenedor-trabajos .trabajo {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .trabajos .contenedor-trabajos .trabajo img.img-trabajo {
     padding: 0px;
