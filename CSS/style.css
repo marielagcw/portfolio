@@ -352,6 +352,9 @@ footer .redes-sociales a:hover {
 /* ------------------------------ Media Queries ----------------------------- */
 
 @media screen and (max-width: 800px) {
+  header .contenedor-texto .texto .nombre#nombre{
+    line-height: 55px;
+  }
   header .contenedor-texto {
     margin: 0;
     margin-bottom: 150px;
@@ -365,6 +368,10 @@ footer .redes-sociales a:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+  header .contenedor-texto .texto .profesion{
+    font-weight: 400;
+    font-size:0.75rem;
   }
   .trabajos .contenedor-trabajos .trabajo {
     width: 50%;
@@ -429,7 +436,7 @@ footer .redes-sociales a:hover {
     padding: 0px;
     margin: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
