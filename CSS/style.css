@@ -194,6 +194,11 @@ section.trabajos .contenedor-trabajos {
 .trabajos .contenedor-trabajos .trabajo {
   margin: 40px;
   width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;  
+  max-width: 300px;
 }
 .trabajos .contenedor-trabajos .trabajo .img-trabajo {
   border-radius: 5px;
